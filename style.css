@@ -1,0 +1,154 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+html,body{
+    width: 100%;
+    height: 100%;
+}
+#background{
+    display: flex;
+    width: 100%;
+    height: 100vh;
+    background-color: #f3f3f3;
+    overflow: hidden;
+}
+#left{
+    padding: 20px 30px;
+    position: relative;
+    width: 67%;
+    height: 100%;
+    background-color: #f3f3f3;
+}
+#left h2{
+    font-size: 25px;
+    color: #111;
+}
+nav{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+nav a{
+    text-decoration: none;
+    font-size: 15px;
+    opacity: .5;
+    color: #000;
+
+}
+nav a:nth-child(2){
+    padding-bottom: 4px;
+    border-bottom: 2px solid #000;
+    opacity: 1;
+    margin-top: 6px;
+}
+#bigcircle{
+    position: absolute;
+    height: 500px;
+    width: 500px;
+    top: 55%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    border-radius: 50%;
+    background-image: url('bigcircle.avif');
+    background-size: cover;
+}
+#smcircle{
+    position: absolute;
+    height: 350px;
+    width: 350px;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    border-radius: 50%;
+    background-color: #ffffff;
+}
+#smcircle img{
+    position: absolute;
+    top: 18%;
+    left:-55%;
+    width: 500px;
+}
+#vmcircle{
+    position: absolute;
+    height: 110px;
+    width: 110px;
+    top: 50%;
+    right: -13.5%;
+    transform: translate(-50%, -50%);
+    border-radius: 50%;
+    border: 5px solid #fff;
+    background-image: url('smallcircle.avif');
+    background-size: cover;
+}
+#vmcircle i{
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    background-color: #fff;
+    padding: 8px;
+    border-radius: 50%;
+}
+#cart{
+    position: absolute;
+    left: 5%;
+    bottom: 5%;
+    font-size: 22px;
+    cursor: pointer;
+}
+#right{
+    width: 33%;
+    height: 100vh;
+    padding: 30px 40px;
+    background-color: #222;
+}
+#right input{
+    width: 100%;
+    padding: 12px 20px;
+    border-radius: 100px;
+    border: none;
+    background-color: #444;
+    outline: none;
+    color: #fff;
+}
+#right h4{
+    color: #fff;
+    font-size: 22px;
+    opacity: .7;
+    font-weight: 100;
+    margin-top: 50px;
+}
+#right #parrotimg{
+    width: 100%;
+    height: 200px;
+    background-image: url(parrot.jpg);
+    background-size: cover;
+    border-radius: 5px;
+    margin-top: 20px;
+}
+#right h3{
+    margin-top: 40px;
+    color: #fff;
+    font-size: 22px;
+}
+.elem{
+    display: flex;
+    width: 100%;
+    font-family: sans-serif;
+}
+.elem>h3{
+    margin-right: 50px;
+    font-size: 10px;
+    font-weight: 400;
+}
+.dets h3{
+    font-size: 20px !important;
+    font-weight: 400;
+}
+.dets p{
+    color: #fff;
+    opacity: .4;
+    font-size: 15px;
+}
